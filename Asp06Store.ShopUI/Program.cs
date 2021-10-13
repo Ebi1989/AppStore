@@ -1,4 +1,5 @@
-using Asp06Store.ShopUI.Models;
+using Asp06Store.Core.Domain.Models;
+using Asp06Store.Core.Domain.Models.Products;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

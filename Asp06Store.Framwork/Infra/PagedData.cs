@@ -1,4 +1,6 @@
-﻿namespace Asp06Store.ShopUI.Models
+﻿using System.Collections.Generic;
+
+namespace Asp06Store.Framwork.Infra
 {
     public class PagedData<T>
     {

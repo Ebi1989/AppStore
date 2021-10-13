@@ -1,4 +1,6 @@
-﻿namespace Asp06Store.ShopUI.Models
+﻿using System;
+
+namespace Asp06Store.Framwork.Infra
 {
     public class PageInfo
     {

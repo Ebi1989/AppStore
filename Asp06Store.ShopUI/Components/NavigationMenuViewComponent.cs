@@ -1,4 +1,4 @@
-﻿using Asp06Store.ShopUI.Models;
+﻿using Asp06Store.Core.Domain.Models.Products;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Asp06Store.ShopUI.Components

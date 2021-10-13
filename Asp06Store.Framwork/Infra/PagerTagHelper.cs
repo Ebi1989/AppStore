@@ -1,9 +1,10 @@
-﻿using Asp06Store.ShopUI.Models;
+﻿using Asp06Store.Framwork.Infra;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Razor.TagHelpers;
+using System.Collections.Generic;
 
 namespace Asp06Store.ShopUI.Infrastructures
 {

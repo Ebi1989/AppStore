@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace Asp06Store.ShopUI.Models
+namespace Asp06Store.ShopUI.Infrastructures.ExtensionMethods
 {
     public static class UrlExtensions
     {

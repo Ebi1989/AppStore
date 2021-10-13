@@ -1,4 +1,7 @@
-﻿namespace Asp06Store.ShopUI.Models
+﻿using Asp06Store.Core.Domain.Models.Products;
+using Asp06Store.Framwork.Infra;
+
+namespace Asp06Store.Core.Domain.Models
 {
     public class EfProductRepository : IProductRepository
     {
@@ -33,5 +36,6 @@
         {
             return storeDbContext.Products.FirstOrDefault(c => c.Id == id);
         }
+
     }
 }

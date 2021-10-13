@@ -19,4 +19,9 @@
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\App06Store.Core.Domain\App06Store.Core.Domain.csproj" />
+    <ProjectReference Include="..\Asp06Store.Infra.Data.Sql\Asp06Store.Infra.Data.Sql.csproj" />
+  </ItemGroup>
+
 </Project>

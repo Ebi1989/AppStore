@@ -1,4 +1,6 @@
-﻿namespace Asp06Store.ShopUI.Models
+﻿using Asp06Store.Framwork.Infra;
+
+namespace Asp06Store.Core.Domain.Models.Products
 {
     public interface IProductRepository
     {

@@ -1,4 +1,5 @@
-﻿using Asp06Store.ShopUI.Models;
+﻿using Asp06Store.Core.Domain.Models.Products;
+using Asp06Store.Core.Domain.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Asp06Store.ShopUI.Controllers
