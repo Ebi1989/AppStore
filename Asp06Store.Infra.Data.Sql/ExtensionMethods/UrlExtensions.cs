@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using Microsoft.AspNetCore.Http;
+using Newtonsoft.Json;
 
 namespace Asp06Store.ShopUI.Infrastructures.ExtensionMethods
 {
@@ -18,7 +19,7 @@ namespace Asp06Store.ShopUI.Infrastructures.ExtensionMethods
         {
             var sessionData = session.GetString(key);
             return sessionData == null
-            ? default(T) : JsonConvert.DeserializeObject<T>(sessionData);
+            ? default : JsonConvert.DeserializeObject<T>(sessionData);
         }
     }
 }

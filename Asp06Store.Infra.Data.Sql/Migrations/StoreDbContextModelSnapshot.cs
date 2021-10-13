@@ -2,10 +2,12 @@
 using Asp06Store.Core.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace Asp06Store.ShopUI.Migrations
+namespace Asp06Store.Infra.Data.Sql.Migrations
 {
     [DbContext(typeof(StoreDbContext))]
     partial class StoreDbContextModelSnapshot : ModelSnapshot
@@ -17,26 +19,23 @@ namespace Asp06Store.ShopUI.Migrations
                 .HasAnnotation("ProductVersion", "6.0.0-rc.1.21452.10")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
-            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
+            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1, 1);
 
-            modelBuilder.Entity("Asp06Store.ShopUI.Models.Product", b =>
+            modelBuilder.Entity("Asp06Store.Core.Domain.Models.Products.Product", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1, 1);
 
                     b.Property<string>("Category")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Price")
