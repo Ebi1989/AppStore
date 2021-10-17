@@ -1,4 +1,6 @@
 ﻿using Asp06Store.Core.Domain.Models.Products;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Asp06Store.Core.Domain.Models
 {

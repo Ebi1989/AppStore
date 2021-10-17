@@ -1,4 +1,5 @@
 ﻿using Asp06Store.Framwork.Infra;
+using System.Collections.Generic;
 
 namespace Asp06Store.Core.Domain.Models.Products
 {
